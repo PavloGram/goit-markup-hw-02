@@ -2,6 +2,9 @@ body{
     background-color: #f5f5f5;
 font-family: roboto;
 }
+header{
+    background-color: #ffffff;
+}
 
 .logo{
  font-family: Raleway;
@@ -43,5 +46,51 @@ font-family: roboto;
 .nav-contact:active{
     color: #2196f3;
 }
-
-    
+.section-hero{
+    background-color: #2f3032;
+}
+.hero-title{
+font-family: Roboto;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #ffffff; 
+}
+.hero-button{
+ font-family:Roboto;
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 30px;
+ align-items: center;
+ text-align: center;
+ letter-spacing: 0.06em;
+ color: #ffffff;
+ background-color: #2196f3;
+}
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active{
+    background-color: #757575;
+   }
+   .benefits-list{
+    list-style-type: none;
+   }
+   .benefits-list-title{
+   font-family:Roboto;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: #212121
+   }
+   .benefits-list-text{
+    font-family:Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575 
+   }
