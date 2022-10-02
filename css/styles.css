@@ -172,6 +172,7 @@ footer {
   color: var(--hover-link-button-color);
 }
 /* porfolio */
+/* hidden title */
 .portfolio-hiden-title .visually-hidden {
   position: absolute;
   white-space: nowrap;
