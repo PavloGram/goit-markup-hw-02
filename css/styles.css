@@ -1,10 +1,18 @@
+:root {
+  --hover-link-button-color: #2196f3;
+  --basic-text-color: #757575;
+  --white-text-color: #ffffff;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  
+}
 /* index.html */
 body {
-  background-color: #f5f5f5;
-  font-family: roboto;
+  background-color: #ffffff;
+  font-family: roboto, sans-serif;
+  color: #212121;
 }
 header {
-  background-color: #ffffff;
+  background-color: var(--white-text-color);
 }
 
 .logo {
@@ -16,13 +24,12 @@ header {
   color: #000000;
 }
 .logo-part {
-  color: #2196f3;
+  color: var(--hover-link-button-color);
 }
 .nav-list {
   list-style-type: none;
 }
 .nav-link {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -32,106 +39,100 @@ header {
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
-  color: #2196f3;
+  color: var(--hover-link-button-color);
 }
 .nav-contact {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--basic-text-color);
 }
 .nav-contact:hover,
 .nav-contact:focus,
 .nav-contact:active {
-  color: #2196f3;
+  color: var(--hover-link-button-color);
 }
 .section-hero {
   background-color: #2f3032;
 }
 .hero-title {
-  font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 .hero-button {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-text-color);
+  background-color: var(--hover-link-button-color);
 }
 .hero-button:hover,
 .hero-button:focus,
 .hero-button:active {
-  background-color: #757575;
+  background-color: var(--basic-text-color);
+}
+.hero-button {
+  cursor: pointer;
 }
 .benefits-list {
   list-style-type: none;
 }
 .benefits-list-title {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 .benefits-list-text {
-  font-family: Roboto;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--basic-text-color);
 }
 .job-title {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 .job-list {
-  list-style-type: none;
-}
+  list-style-type: none;}
+
+  .section-team{
+  background-color: #f5f4fa;
+  }
+
 .team-title {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 .team-list {
   list-style-type: none;
+  background-color: #f5f4fa;
+}
+.team-list-color {
+  background: #ffffff;
 }
 .team-people {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 .team-text {
-  font-family: Roboto;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--basic-text-color);
 }
 footer {
   background-color: #2f303a;
@@ -142,70 +143,79 @@ footer {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 
 .footer-list {
   list-style-type: none;
 }
 .location {
-  font-family: Roboto;
-  font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 .footer-contact {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-link-color);
 }
 .footer-contact:hover,
 .footer-contact:focus,
 .footer-contact:active {
-  color: #2196f3;
+  color: var(--hover-link-button-color);
 }
 /* porfolio */
+.portfolio-hiden-title .visually-hidden {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+
 .portfolio-list {
   list-style-type: none;
 }
 .portfolio-button {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: #212121;
+}
+.portfolio-button {
+  cursor: pointer;
 }
 .portfolio-all {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-text-color);
+  background-color: var(--hover-link-button-color);
 }
 .portfolio-button:hover {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-color);
+  background-color: var(--hover-link-button-color);
+}
+.portfolio-list-color{
+  background-color: #ffffff;
 }
 .portfolio-title {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
 }
 .portfolio-text {
-  font-family: Roboto;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--basic-text-color);
 }
 .lab {
   text-transform: uppercase;
